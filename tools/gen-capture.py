@@ -181,6 +181,8 @@ if not todo:
 # A tab of our own, so a tab the user has open is never navigated or resized.
 tab = cdp("Target.createTarget", url="about:blank", background=True)["targetId"]
 switch_tab(tab)
+# A hidden tab pauses rendering and times out wheel input, so bring it to the front.
+activate_tab(tab)
 summary = []
 try:
     summary = [capture(t) for t in todo]

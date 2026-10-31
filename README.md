@@ -55,7 +55,15 @@ Commands share decisions through `.uxlab/` in your project (`style.json`, `brief
 
 ## Reference capture
 
-`/uxlab:inspo` captures live sites (desktop and phone screenshots plus measured type, color, spacing, grid and motion stack) with `scripts/capture.sh`, which runs through [browser-harness](https://github.com/browser-use/browser-harness). Install browser-harness first. Third-party sites load in the browser it is attached to; set `BU_NAME` or `BU_CDP_URL` to use an isolated browser.
+`/uxlab:inspo` captures live sites (desktop and phone screenshots plus measured type, color, spacing, grid and motion stack) with `scripts/capture.sh`, which runs through [browser-harness](https://github.com/browser-use/browser-harness). Install browser-harness first. Third-party sites load in the browser it is attached to, and the capture tab comes to the front while it runs.
+
+To keep third-party sites out of a signed-in profile, or when macOS blocks browser-harness from reading Chrome's `DevToolsActivePort` ("Operation not permitted"), capture through a throwaway Chrome:
+
+```sh
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new \
+  --remote-debugging-port=9333 --user-data-dir="$HOME/.cache/uxlab-chrome" about:blank &
+BU_NAME=uxlab BU_CDP_URL=http://127.0.0.1:9333 scripts/capture.sh https://example.com --out .uxlab/refs
+```
 
 ## Provenance and license
 

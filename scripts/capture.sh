@@ -8,8 +8,9 @@
 #
 # Captures each site on desktop and phone (screenshots plus measured design DNA)
 # through browser-harness. Third-party sites load in the browser browser-harness
-# is attached to; point BU_NAME / BU_CDP_URL at an isolated browser to keep them
-# out of a signed-in profile.
+# is attached to, and the capture tab comes to the front while it runs. Point
+# BU_NAME / BU_CDP_URL at an isolated browser (see README) to keep them out of a
+# signed-in profile.
 set -euo pipefail
 
 usage() {
