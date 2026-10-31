@@ -1,0 +1,44 @@
+uxlab
+Copyright 2026 Abner Siqueira
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+uxlab is a derivative work. It combines and modifies the following projects.
+
+--------------------------------------------------------------------------------
+Sumi 4.2.0 (upstream commit 3a3693b)
+https://github.com/phazurlabs/sumi
+Copyright 2026 Phazur Labs, licensed under the Apache License, Version 2.0.
+
+Sumi's NOTICE reads: "This product includes software developed at Phazur Labs
+(https://phazurlabs.com)." The full text is in licenses/sumi-NOTICE.txt.
+
+Derived material: the 45 skills, 195 reference files, 38 commands, 4 agents and
+scripts/awwwards.mjs. Every derived file carries a header comment naming its
+source path and upstream commit.
+
+Changes made by uxlab:
+- The 45 skills are consolidated into 11 domain skills plus a router skill. Each
+  original SKILL.md is now a reference file under skills/<domain>/references/,
+  and its original references/ folder sits beside it.
+- Cross-references between skills are rewritten to the "domain/name" notation.
+- Sumi branding, the .sumi/ design-memory folder and the /sumi: command
+  namespace are renamed to uxlab, .uxlab/ and /uxlab:. The "sumi" command is
+  now "help".
+- scripts/capture.mjs (puppeteer-core) is replaced by scripts/capture.py and
+  scripts/capture.sh, which drive browser-harness over raw CDP. The in-page
+  JavaScript (consent dismissal, design DNA measurement) is unchanged.
+
+uxlab is not Sumi and is not affiliated with or endorsed by Phazur Labs. Per the
+Sumi trademark policy, this modified version does not use the Sumi name.
+
+--------------------------------------------------------------------------------
+bama (upstream commit f0c2cdb)
+https://github.com/daveebbelaar/bama
+Copyright (c) 2026 Dave Ebbelaar, licensed under the MIT License
+(see licenses/bama-MIT.txt).
+
+Derived material: the ux-pass skill (from skills/design/ux-design), the
+design-system-workflow reference (from skills/design/design-system) and the
+layout-grid reference (from skills/design/layout-grid), adapted from native
+macOS apps to web products.

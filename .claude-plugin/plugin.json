@@ -1,0 +1,40 @@
+{
+  "name": "uxlab",
+  "version": "0.1.0",
+  "description": "UX/UI design intelligence for web products: Nielsen heuristics, cognitive psychology, accessibility, design systems, data visualization, UX writing, motion, and reference-grounded design. 13 skills, 38 commands, 4 agents.",
+  "author": {
+    "name": "Abner Siqueira",
+    "url": "https://github.com/abnersiqueira"
+  },
+  "repository": "https://github.com/abnersiqueira/uxlab",
+  "license": "Apache-2.0",
+  "keywords": [
+    "ux",
+    "ui",
+    "design",
+    "heuristics",
+    "usability",
+    "accessibility",
+    "design-systems",
+    "design-tokens",
+    "data-visualization",
+    "ux-writing",
+    "components",
+    "skills"
+  ],
+  "skills": [
+    "./skills/uxlab",
+    "./skills/ux-pass",
+    "./skills/ux-evaluation",
+    "./skills/ux-research",
+    "./skills/visual-design",
+    "./skills/design-systems",
+    "./skills/layout-and-flows",
+    "./skills/forms-and-content",
+    "./skills/motion",
+    "./skills/accessibility-i18n",
+    "./skills/data-viz",
+    "./skills/platforms-and-ai",
+    "./skills/references-and-sectors"
+  ]
+}

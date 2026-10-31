@@ -1,0 +1,25 @@
+{
+  "name": "uxlab",
+  "owner": {
+    "name": "Abner Siqueira",
+    "url": "https://github.com/abnersiqueira"
+  },
+  "description": "UX/UI design intelligence for web products. Agent skills, commands and agents for heuristics, accessibility, design systems and reference-grounded design.",
+  "plugins": [
+    {
+      "name": "uxlab",
+      "source": "./",
+      "description": "UX/UI design intelligence for web products: Nielsen heuristics, cognitive psychology, accessibility, design systems, data visualization, UX writing, motion, and reference-grounded design. 13 skills, 38 commands, 4 agents.",
+      "category": "design",
+      "keywords": [
+        "ux",
+        "ui",
+        "design",
+        "heuristics",
+        "accessibility",
+        "design-systems",
+        "skills"
+      ]
+    }
+  ]
+}
